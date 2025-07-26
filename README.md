@@ -59,4 +59,4 @@ A lightweight, real-time web application built with **Vanilla JavaScript** and *
 
 -📅 Filter by specific date ranges (last 7 days, custom)
 
-- 🔐 Auth & Role-based dashboards
+-🔐 Auth & Role-based dashboards
