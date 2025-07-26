@@ -1,10 +1,10 @@
-import express from 'express';
-import cors from 'cors';
-import { Server as socketIO} from 'socket.io';
-import http from 'http';
-import dotenv from 'dotenv';
-import { mock } from './utils/createBookings.js';
-import { AddUsers, getUserActivityLast24Hours } from './utils/users.js';
+import express from 'express'
+import cors from 'cors'
+import { Server as socketIO} from 'socket.io'
+import http from 'http'
+import dotenv from 'dotenv'
+import { mock } from './utils/createBookings.js'
+import { AddUsers, getUserActivityLast24Hours } from './utils/users.js'
 
 
 dotenv.config({
@@ -26,7 +26,6 @@ app.use(cors())
 app.use(express.static('public'))
 
 
-
 // on server side we sent new booking after every 5 seconds
 mock(bookings, io)
 
@@ -44,6 +43,13 @@ app.get('/api/bookings',(req,res)=>{
         });
 })
 
+app.get('/api/test',(req,res)=>{
+        res.json({
+                success:true,
+                message:"Server  is working fine"
+        })
+})
+
 // socket connection
 io.on('connection',(socket)=>{
         console.log("Client connected")
@@ -56,6 +62,7 @@ io.on('connection',(socket)=>{
         
         io.emit('user-connected', userConnected)
 })
+
 
 server.listen(PORT, () => {
         console.log(`Server is running on port : ${PORT} 👍`)

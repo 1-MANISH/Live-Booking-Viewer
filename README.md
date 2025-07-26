@@ -24,7 +24,8 @@ A lightweight, real-time web application built with **Vanilla JavaScript** and *
 
 ## 📁 Folder Structure
 
-- **LIVE BOOKINGS VIEWER**
+-**LIVE BOOKINGS VIEWER**
+```
   └── [public] (frontend)
       ├── index.html
       ├── style.css
@@ -35,7 +36,7 @@ A lightweight, real-time web application built with **Vanilla JavaScript** and *
           │   └── user.js
           ├── sample.env   (change this to `.env` later)
           └── index.js     ()
-
+```
 
 
 
@@ -57,3 +58,5 @@ A lightweight, real-time web application built with **Vanilla JavaScript** and *
 -💾 Connect to backend DB (MongoDB, Redis) to persist users
 
 -📅 Filter by specific date ranges (last 7 days, custom)
+
+- 🔐 Auth & Role-based dashboards
