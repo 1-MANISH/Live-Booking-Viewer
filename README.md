@@ -25,16 +25,17 @@ A lightweight, real-time web application built with **Vanilla JavaScript** and *
 ## 📁 Folder Structure
 
 -**LIVE BOOKINGS VIEWER**
-        |---[public] (frontend)
-                |----index.html
-                |----style.css
-                |----script.js
-        |----[server]
-                |----[utils]
-                        |----createBookings.js
-                        |----user.js
-                |----sample.env(later u have  to change as.env)
-                |----index.js(main)
+
+-|---[public] (frontend)
+        -|----index.html
+        -|----style.css
+        -|----script.js
+        -|----[server]
+                -|----[utils]
+                        -|----createBookings.js
+                        -|----user.js
+                -|----sample.env(later u have  to change as.env)
+                -|----index.js(main)
 
 
 
@@ -49,6 +50,7 @@ A lightweight, real-time web application built with **Vanilla JavaScript** and *
                 cd live-bookings-viewer
                 npm i
                 npm run dev
+```
 
 ## 📌 Future Improvements
 
