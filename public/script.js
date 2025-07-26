@@ -103,6 +103,7 @@ socket.on('new-booking', (booking) => {
                 fetchBookings(1);
         } else {
                 console.log("New booking received but you're on another page.");
+                fetchBookings(currentPage);
         }
 });
 
